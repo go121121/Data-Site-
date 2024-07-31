@@ -8,7 +8,6 @@ Setting in Windows:
 py -m venv myworld
 myworld\Scripts\activate.bat
 '''
-
 Setting MAC OS: 
 '''
 python -m venv myworld
