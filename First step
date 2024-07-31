@@ -1,0 +1,12 @@
+Create and activate Virtual Environemnt 
+
+Window: 
+
+py -m venv {file name}
+{filename}\Scripts\activate.bat
+
+Mac: 
+python -m venv { file name } 
+source {filename} /bin/activate
+
+
