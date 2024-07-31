@@ -15,3 +15,9 @@ Setting MAC OS:
 python -m venv myworld
 source myworld/bin/activate
 ```
+
+# Install Django 
+```
+py -m pip install Django
+
+```
