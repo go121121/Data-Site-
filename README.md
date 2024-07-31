@@ -4,12 +4,14 @@ The site is to provide a template for me to build site using python , specifical
 ## Create and activate Environement 
 
 Setting in Windows: 
-''' 
+
+``` 
 py -m venv myworld
 myworld\Scripts\activate.bat
-'''
+```
 Setting MAC OS: 
-'''
+
+```
 python -m venv myworld
 source myworld/bin/activate
-'''
+```
