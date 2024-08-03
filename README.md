@@ -25,11 +25,20 @@ py -m pip install Django
 ## Create Project 
 When starting projected, you have to type those commend: 
 ```
-django-admin startproject {files name}
+django-admin startproject {project name}
 
 ```
  After that, you will have to run the server and run your project 
 ```
 py manage.py runserver
+
+```
+
+### Create an app 
+
+What is an app ? So an app will allow you to list or register in Data base which it really useful when you want to handle well on borht backend and frontend. 
+
+```
+py manage.py startapp { app name} 
 
 ```
