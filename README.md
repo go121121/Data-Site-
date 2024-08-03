@@ -43,7 +43,7 @@ py manage.py startapp { app name}
 
 ```
 
-1. Views.py :
+## Views.py :
 
 Django views are Python functions that takes http requests and returns http response, like HTML documents.
 
@@ -62,6 +62,21 @@ from django.http import HttpResponse
 
 def members(request):
     return HttpResponse("Hello world!")
+
+```
+
+## Urls.py 
+
+fine the path of your inheritate app , e.x: website_builder/front_task/web_application/urls.py 
+
+```
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('members/', views.members, name='members'),
+]
 
 ```
 
