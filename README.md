@@ -42,3 +42,26 @@ What is an app ? So an app will allow you to list or register in Data base which
 py manage.py startapp { app name} 
 
 ```
+
+1. Views.py :
+
+Django views are Python functions that takes http requests and returns http response, like HTML documents.
+
+Views.py original file looks like: 
+
+```
+from django.shortcuts import render
+
+# Create your views here.
+```
+However, since you want to recieve and reponse to the request, we have to add something new: 
+
+```
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def members(request):
+    return HttpResponse("Hello world!")
+
+```
+
