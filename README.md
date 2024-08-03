@@ -22,7 +22,7 @@ py -m pip install Django
 
 ```
 
-## Create Project 
+# Create Project 
 When starting projected, you have to type those commend: 
 ```
 django-admin startproject {project name}
@@ -34,7 +34,7 @@ py manage.py runserver
 
 ```
 
-### Create an app 
+## Create an app 
 
 What is an app ? So an app will allow you to list or register in Data base which it really useful when you want to handle well on borht backend and frontend. 
 
