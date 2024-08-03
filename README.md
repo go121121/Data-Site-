@@ -21,3 +21,15 @@ source myworld/bin/activate
 py -m pip install Django
 
 ```
+
+## Create Project 
+When starting projected, you have to type those commend: 
+```
+django-admin startproject {files name}
+
+```
+ After that, you will have to run the server and run your project 
+```
+py manage.py runserver
+
+```
