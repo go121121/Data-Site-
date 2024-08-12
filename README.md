@@ -81,4 +81,6 @@ urlpatterns = [
 ```
 After executing the file, the urls for the web should look like this:
 " http://127.0.0.1:8000/members/ " . And print out like this: 
-[Hello]
+{ Hello } 
+
+
