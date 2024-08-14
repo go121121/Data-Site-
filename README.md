@@ -83,4 +83,37 @@ After executing the file, the urls for the web should look like this:
 " http://127.0.0.1:8000/members/ " . And print out like this: 
 { Hello } 
 
+## Create a templates folder 
+
+Create a templates folder in your apps and add a new html file in it.
+
+Change the views.py method and add a few things on it. 
+
+```
+from django.http import HttpResponse
+from django.template import loader
+
+def members(request):
+  template = loader.get_template('myfirst.html')
+  return HttpResponse(template.render())
+
+```
+Once finish editing the app, we want to save the app name so we go to settings.py and add the app name: 
+
+Install_Apps=[
+  'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'apps name'
+
+]
+
+then run this command: 
+```
+py manage.py migrate
+
+```
 
