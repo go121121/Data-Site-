@@ -1,0 +1,36 @@
+When we create a website, we want all the data store in the website can be seen as a coder. By doing below step, you can have great understanding on how to set up a sql database. 
+
+1st step: 
+
+Go to your app folder and find a file name model.py (front_task/web_application/models.py). And then type the code below: 
+
+```
+from django.db import models
+
+class Member(models.Model):
+  firstname = models.CharField(max_length=255)
+  lastname = models.CharField(max_length=255)
+
+```
+
+Since we want to create a model and save the data from the app into our main website, we have to migrate it, which is show down below. 
+```
+py manage.py makemigrations {app name} 
+
+```
+
+A new file name should be appear in the migration folder [ 0001_initial.py ]. 
+
+Check the data status: 
+
+```
+py manage.py migrate
+
+```
+
+View Sql: 
+
+```
+py manage.py sqlmigrate {app name}  0001
+
+```
