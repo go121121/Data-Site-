@@ -117,3 +117,7 @@ py manage.py migrate
 
 ```
 
+## Creat SQL 
+
+Check the create SQl file 
+[Contribution guidelines for this project](create_sql)
