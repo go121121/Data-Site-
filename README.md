@@ -121,3 +121,7 @@ py manage.py migrate
 
 Check the create SQl file 
 [Contribution guidelines for this project](create_sql)
+
+### Show the sql data on the website 
+
+Create a html in template call access which allow you to go thoorugh your sql base. You can find this file on the folder call templates provided. 
