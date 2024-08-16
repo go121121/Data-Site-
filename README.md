@@ -117,6 +117,8 @@ py manage.py migrate
 
 ```
 
+For more information, please check the model.py and migration folder 
+
 ## Creat SQL 
 
 Check the create SQl file 
@@ -125,3 +127,5 @@ Check the create SQl file
 ### Show the sql data on the website 
 
 Create a html in template call access which allow you to go thoorugh your sql base. You can find this file on the folder call templates provided. 
+
+For all the files , please check out the template folder, it will give you all the inforamtion you need. 
