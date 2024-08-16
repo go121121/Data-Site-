@@ -1,0 +1,19 @@
+{% extends 'master.html' %}
+    {% block title %}
+        personal information 
+    {% endblock %}
+
+    {% block content %}
+
+    <p><a href="/"> Home Page </a></p> 
+
+    <h1>web_application</h1> 
+    <ul>
+        <ul>
+            {% for x in data_processing %}
+              <li> <a href="details/{{x.id}}">{{ x.first_name }}{{ x.last_name }}</a></li>
+            {% endfor %}
+          </ul>
+    </ul>
+
+{% endblock %}
