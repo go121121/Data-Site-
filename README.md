@@ -129,3 +129,50 @@ Check the create SQl file
 Create a html in template call access which allow you to go thoorugh your sql base. You can find this file on the folder call templates provided. 
 
 For all the files , please check out the template folder, it will give you all the inforamtion you need. 
+
+## Django Syntax 
+
+When we create a varaiable in views.py, we want to show the variable on the website. Usually, we can asscess out varaiable thorught {{}}. 
+
+For example, 
+views.py 
+```
+from django.http import HttpResponse
+from django.template import loader
+
+def testing(request):
+  template = loader.get_template('template.html')
+  context = {
+    'person_name': 'Tony ',
+  }
+  return HttpResponse(template.render(context, request))
+
+```
+access.html 
+```
+Hello, my name is {{person_name }}
+```
+
+However, wehn the task is mutiple and you want to reflect on your website, creating variable in a template is not reliable. As a result, ususlayy we create data variable in model.py and show it on the template. 
+
+views.py 
+```
+from django.http import HttpResponse, HttpResponseRedirect
+from django.template import loader
+from .models import Member
+
+def testing(request):
+  mymembers = Member.objects.all().values()
+  template = loader.get_template('template.html')
+  context = {
+    'mymembers': mymembers,
+  }
+  return HttpResponse(template.render(context, request))
+```
+access.html 
+```
+{% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+
+```
